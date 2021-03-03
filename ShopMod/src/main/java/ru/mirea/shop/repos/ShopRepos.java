@@ -5,4 +5,5 @@ import ru.mirea.shop.model.Shop;
 
 public interface ShopRepos extends JpaRepository<Shop, Long> {
     public Shop getShopByName(String name);
+    public void deleteShopByName(String name);
 }

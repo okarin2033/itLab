@@ -17,8 +17,9 @@ public class Good {
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
 int id;
-int name;
+String name;
 int cost;
-//@ManyToOne
-//Category category;
+int amount;
+@ManyToOne
+Category category;
 }

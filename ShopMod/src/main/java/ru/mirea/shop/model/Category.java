@@ -15,5 +15,9 @@ public class Category {
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
 int id;
-int name;
+String name;
+
+    public Category(String nameCat) {
+        this.name=nameCat;
+    }
 }

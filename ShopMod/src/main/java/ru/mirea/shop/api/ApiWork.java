@@ -15,6 +15,7 @@ public class ApiWork {
 
     public static String postMethod(String path, Object obj){
         String answer=restTemplate.postForObject((host+path), obj, String.class);
+        System.out.println(host+path);
         return answer;
     }
     public static String putMethod(String path, Object obj) {

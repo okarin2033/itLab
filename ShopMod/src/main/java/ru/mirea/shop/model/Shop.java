@@ -11,12 +11,15 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@Setter
 public class Shop {
 @GeneratedValue(strategy = GenerationType.AUTO)
 @Id
 int id;
 String name;
-//@OneToMany
-//List<Check> checkList;
+@OneToMany
+List<Receipt> checkList;
+@OneToMany
+List<Good> goodList;
 
 }

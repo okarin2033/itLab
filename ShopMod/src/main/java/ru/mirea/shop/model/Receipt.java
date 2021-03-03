@@ -18,7 +18,7 @@ public class Receipt {
 @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     int sum;
-//@OneToMany
-//List<Good> goodList;
+@OneToMany
+List<Good> goodList;
 
 }
