@@ -34,11 +34,6 @@ public class UserController {
                 } catch (Exception e) {
                     System.out.println("no name");
                 }
-                try {
-                    user.setBalance(userUpdateData.get("balance").getAsInt());
-                } catch (Exception e) {
-                    System.out.println("no balance");
-                }
             usersRepo.save(user);
                 return user;
             }
@@ -51,7 +46,6 @@ public class UserController {
         JsonObject userObject=JsonParser.parseString(Json).getAsJsonObject();
         Users user = new Users();
         user.setName(userObject.get("name").getAsString());
-        user.setBalance(userObject.get("balance").getAsInt());
         usersRepo.save(user);
         return user;
     }

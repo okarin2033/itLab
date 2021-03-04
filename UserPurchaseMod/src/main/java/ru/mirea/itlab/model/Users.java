@@ -1,8 +1,12 @@
 package ru.mirea.itlab.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
-
+@Getter
+@Setter
 @Entity
 public class Users {
     @Id
@@ -12,42 +16,12 @@ public class Users {
     private List<Purchase> purchasesList;
     private String name;
 
-
-    private int balance;
     public Users(String name){
         this.name=name;
     }
 
     public Users() {
 
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public List<Purchase> getPurchasesList() {
-        return purchasesList;
-    }
-
-    public void setPurchasesList(List<Purchase> purchasesList) {
-        this.purchasesList = purchasesList;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getBalance() {
-        return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
     }
 
     public void addPurchase(Purchase purchase){
