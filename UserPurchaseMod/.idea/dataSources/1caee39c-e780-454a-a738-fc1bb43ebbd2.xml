@@ -784,12 +784,12 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1614440515</StartupTime>
+      <StartupTime>1614930198</StartupTime>
     </root>
     <database id="2" parent="1" name="app_data">
       <ObjectId>16394</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>952</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1278</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -850,7 +850,7 @@ false Zulu
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>953</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1279</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="17" parent="2" name="heap">
@@ -926,168 +926,122 @@ false Zulu
       <StateNumber>943</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="30" parent="16" name="goods">
-      <ObjectId>16923</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>937</StateNumber>
-    </table>
-    <table id="31" parent="16" name="purchase">
+    <table id="30" parent="16" name="purchase">
       <ObjectId>16928</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>944</StateNumber>
     </table>
-    <table id="32" parent="16" name="users">
+    <table id="31" parent="16" name="users">
       <ObjectId>16936</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>945</StateNumber>
     </table>
-    <table id="33" parent="16" name="users_purchases_list">
+    <table id="32" parent="16" name="users_purchases_list">
       <ObjectId>16941</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>944</StateNumber>
     </table>
-    <column id="34" parent="30" name="id">
-      <Position>1</Position>
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>937</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="35" parent="30" name="amount">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>937</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="36" parent="30" name="cost">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>937</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="37" parent="30" name="name">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>937</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="38" parent="30" name="goods_pkey">
-      <ObjectId>16926</ObjectId>
-      <StateNumber>937</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-    </index>
-    <key id="39" parent="30" name="goods_pkey">
-      <ObjectId>16927</ObjectId>
-      <StateNumber>937</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>goods_pkey</UnderlyingIndexName>
-    </key>
-    <column id="40" parent="31" name="id">
+    <column id="33" parent="30" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="41" parent="31" name="date">
+    <column id="34" parent="30" name="date">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>938</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="42" parent="31" name="name">
+    <column id="35" parent="30" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>938</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="31" name="sum">
+    <column id="36" parent="30" name="sum">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>938</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="44" parent="31" name="purchase_pkey">
+    <index id="37" parent="30" name="purchase_pkey">
       <ObjectId>16934</ObjectId>
       <StateNumber>938</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="45" parent="31" name="purchase_pkey">
+    <key id="38" parent="30" name="purchase_pkey">
       <ObjectId>16935</ObjectId>
       <StateNumber>938</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>purchase_pkey</UnderlyingIndexName>
     </key>
-    <column id="46" parent="32" name="id">
+    <column id="39" parent="31" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>939</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="47" parent="32" name="balance">
+    <column id="40" parent="31" name="balance">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>939</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="48" parent="32" name="name">
+    <column id="41" parent="31" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>939</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="49" parent="32" name="users_pkey">
+    <index id="42" parent="31" name="users_pkey">
       <ObjectId>16939</ObjectId>
       <StateNumber>939</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="50" parent="32" name="users_pkey">
+    <key id="43" parent="31" name="users_pkey">
       <ObjectId>16940</ObjectId>
       <StateNumber>939</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <column id="51" parent="33" name="users_id">
+    <column id="44" parent="32" name="users_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>940</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="52" parent="33" name="purchases_list_id">
+    <column id="45" parent="32" name="purchases_list_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>940</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="53" parent="33" name="uk_3ed9f0pgmjcj2g0w0jcduvl1u">
+    <index id="46" parent="32" name="uk_3ed9f0pgmjcj2g0w0jcduvl1u">
       <ObjectId>16944</ObjectId>
       <StateNumber>942</StateNumber>
       <ColNames>purchases_list_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="54" parent="33" name="uk_3ed9f0pgmjcj2g0w0jcduvl1u">
+    <key id="47" parent="32" name="uk_3ed9f0pgmjcj2g0w0jcduvl1u">
       <ObjectId>16945</ObjectId>
       <StateNumber>942</StateNumber>
       <ColNames>purchases_list_id</ColNames>
       <UnderlyingIndexName>uk_3ed9f0pgmjcj2g0w0jcduvl1u</UnderlyingIndexName>
     </key>
-    <foreign-key id="55" parent="33" name="fkkvbwr9x7gx1krpco15nqpag2j">
+    <foreign-key id="48" parent="32" name="fkkvbwr9x7gx1krpco15nqpag2j">
       <ObjectId>16953</ObjectId>
       <StateNumber>945</StateNumber>
       <ColNames>users_id</ColNames>
@@ -1097,7 +1051,7 @@ false Zulu
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="56" parent="33" name="fk2n9wu5elaypprqsw8igjhj4wu">
+    <foreign-key id="49" parent="32" name="fk2n9wu5elaypprqsw8igjhj4wu">
       <ObjectId>16948</ObjectId>
       <StateNumber>944</StateNumber>
       <ColNames>purchases_list_id</ColNames>

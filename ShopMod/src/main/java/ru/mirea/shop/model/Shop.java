@@ -22,4 +22,8 @@ List<Receipt> checkList;
 @OneToMany
 List<Good> goodList;
 
+public void addRec(Receipt rec){
+    checkList.add(rec);
+}
+
 }

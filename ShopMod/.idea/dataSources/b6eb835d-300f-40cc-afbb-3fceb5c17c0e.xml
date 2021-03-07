@@ -784,12 +784,11 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1614440515</StartupTime>
+      <StartupTime>1614930198</StartupTime>
     </root>
     <database id="2" parent="1" name="app_data">
       <ObjectId>16394</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>831</IntrospectionStateNumber>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
@@ -799,7 +798,7 @@ false Zulu
     <database id="4" parent="1" name="shop_data">
       <ObjectId>16663</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>929</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1275</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <role id="5" parent="1" name="pg_execute_server_program">
@@ -851,7 +850,7 @@ false Zulu
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>930</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1276</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="17" parent="4" name="heap">
@@ -922,318 +921,296 @@ false Zulu
     <language id="27" parent="4" name="plpgsql"/>
     <language id="28" parent="4" name="sql"/>
     <sequence id="29" parent="16" name="hibernate_sequence">
-      <ObjectId>16886</ObjectId>
+      <ObjectId>17064</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>918</StateNumber>
+      <StateNumber>1073</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
     <table id="30" parent="16" name="category">
-      <ObjectId>16851</ObjectId>
+      <ObjectId>17029</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>919</StateNumber>
+      <StateNumber>1074</StateNumber>
     </table>
     <table id="31" parent="16" name="good">
-      <ObjectId>16856</ObjectId>
+      <ObjectId>17034</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>919</StateNumber>
+      <StateNumber>1074</StateNumber>
     </table>
     <table id="32" parent="16" name="receipt">
-      <ObjectId>16861</ObjectId>
+      <ObjectId>17232</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>921</StateNumber>
+      <StateNumber>1262</StateNumber>
     </table>
-    <table id="33" parent="16" name="receipt_good_list">
-      <ObjectId>16866</ObjectId>
+    <table id="33" parent="16" name="shop">
+      <ObjectId>17047</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>920</StateNumber>
+      <StateNumber>1078</StateNumber>
     </table>
-    <table id="34" parent="16" name="shop">
-      <ObjectId>16869</ObjectId>
+    <table id="34" parent="16" name="shop_check_list">
+      <ObjectId>17237</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>923</StateNumber>
+      <StateNumber>1263</StateNumber>
     </table>
-    <table id="35" parent="16" name="shop_check_list">
-      <ObjectId>16874</ObjectId>
+    <table id="35" parent="16" name="shop_good_list">
+      <ObjectId>17055</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>922</StateNumber>
+      <StateNumber>1079</StateNumber>
     </table>
-    <table id="36" parent="16" name="shop_good_list">
-      <ObjectId>16877</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>924</StateNumber>
-    </table>
-    <column id="37" parent="30" name="id">
+    <column id="36" parent="30" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>905</StateNumber>
+      <StateNumber>1060</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="38" parent="30" name="name">
+    <column id="37" parent="30" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>905</StateNumber>
+      <StateNumber>1060</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="39" parent="30" name="category_pkey">
-      <ObjectId>16854</ObjectId>
-      <StateNumber>905</StateNumber>
+    <index id="38" parent="30" name="category_pkey">
+      <ObjectId>17032</ObjectId>
+      <StateNumber>1060</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="40" parent="30" name="category_pkey">
-      <ObjectId>16855</ObjectId>
-      <StateNumber>905</StateNumber>
+    <key id="39" parent="30" name="category_pkey">
+      <ObjectId>17033</ObjectId>
+      <StateNumber>1060</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>category_pkey</UnderlyingIndexName>
     </key>
-    <column id="41" parent="31" name="id">
+    <column id="40" parent="31" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>906</StateNumber>
+      <StateNumber>1061</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="42" parent="31" name="amount">
+    <column id="41" parent="31" name="amount">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>906</StateNumber>
+      <StateNumber>1061</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="31" name="cost">
+    <column id="42" parent="31" name="cost">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>906</StateNumber>
+      <StateNumber>1061</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="44" parent="31" name="name">
+    <column id="43" parent="31" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>906</StateNumber>
+      <StateNumber>1061</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="31" name="category_id">
+    <column id="44" parent="31" name="category_id">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>906</StateNumber>
+      <StateNumber>1061</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="46" parent="31" name="good_pkey">
-      <ObjectId>16859</ObjectId>
-      <StateNumber>906</StateNumber>
+    <index id="45" parent="31" name="good_pkey">
+      <ObjectId>17037</ObjectId>
+      <StateNumber>1061</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="47" parent="31" name="good_pkey">
-      <ObjectId>16860</ObjectId>
-      <StateNumber>906</StateNumber>
+    <key id="46" parent="31" name="good_pkey">
+      <ObjectId>17038</ObjectId>
+      <StateNumber>1061</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>good_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="48" parent="31" name="fknwn3lwq5f5pvkp4jqb32ddabc">
-      <ObjectId>16888</ObjectId>
-      <StateNumber>919</StateNumber>
+    <foreign-key id="47" parent="31" name="fknwn3lwq5f5pvkp4jqb32ddabc">
+      <ObjectId>17066</ObjectId>
+      <StateNumber>1074</StateNumber>
       <ColNames>category_id</ColNames>
-      <RefTableId>16851</RefTableId>
+      <RefTableId>17029</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>category</RefTableName>
       <RefKeyName>category_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="49" parent="32" name="id">
+    <column id="48" parent="32" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>907</StateNumber>
+      <StateNumber>1258</StateNumber>
       <TypeId>23</TypeId>
+    </column>
+    <column id="49" parent="32" name="date">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1258</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <column id="50" parent="32" name="sum">
-      <Position>2</Position>
+      <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>907</StateNumber>
+      <StateNumber>1258</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="51" parent="32" name="receipt_pkey">
-      <ObjectId>16864</ObjectId>
-      <StateNumber>907</StateNumber>
+    <column id="51" parent="32" name="ts">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1258</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="52" parent="32" name="good_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1258</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="53" parent="32" name="receipt_pkey">
+      <ObjectId>17235</ObjectId>
+      <StateNumber>1258</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="52" parent="32" name="receipt_pkey">
-      <ObjectId>16865</ObjectId>
-      <StateNumber>907</StateNumber>
+    <key id="54" parent="32" name="receipt_pkey">
+      <ObjectId>17236</ObjectId>
+      <StateNumber>1258</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>receipt_pkey</UnderlyingIndexName>
     </key>
-    <column id="53" parent="33" name="receipt_id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>908</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="54" parent="33" name="good_list_id">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>908</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="55" parent="33" name="uk_4ttfq91hp1f0hrooy1twnf4dv">
-      <ObjectId>16880</ObjectId>
-      <StateNumber>913</StateNumber>
-      <ColNames>good_list_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="56" parent="33" name="uk_4ttfq91hp1f0hrooy1twnf4dv">
-      <ObjectId>16881</ObjectId>
-      <StateNumber>913</StateNumber>
-      <ColNames>good_list_id</ColNames>
-      <UnderlyingIndexName>uk_4ttfq91hp1f0hrooy1twnf4dv</UnderlyingIndexName>
-    </key>
-    <foreign-key id="57" parent="33" name="fkojsouv8idhmhybyfpr95cvonb">
-      <ObjectId>16898</ObjectId>
-      <StateNumber>921</StateNumber>
-      <ColNames>receipt_id</ColNames>
-      <RefTableId>16861</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>receipt</RefTableName>
-      <RefKeyName>receipt_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="58" parent="33" name="fke3x84fp786xalpgjpcu8qk494">
-      <ObjectId>16893</ObjectId>
-      <StateNumber>920</StateNumber>
-      <ColNames>good_list_id</ColNames>
-      <RefTableId>16856</RefTableId>
+    <foreign-key id="55" parent="32" name="fko385o31q63ed5yxj87aj7vr6w">
+      <ObjectId>17242</ObjectId>
+      <StateNumber>1262</StateNumber>
+      <ColNames>good_id</ColNames>
+      <RefTableId>17034</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>good</RefTableName>
       <RefKeyName>good_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="59" parent="34" name="id">
+    <column id="56" parent="33" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>909</StateNumber>
+      <StateNumber>1064</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="60" parent="34" name="name">
+    <column id="57" parent="33" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>909</StateNumber>
+      <StateNumber>1064</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="61" parent="34" name="shop_pkey">
-      <ObjectId>16872</ObjectId>
-      <StateNumber>909</StateNumber>
+    <index id="58" parent="33" name="shop_pkey">
+      <ObjectId>17050</ObjectId>
+      <StateNumber>1064</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="62" parent="34" name="shop_pkey">
-      <ObjectId>16873</ObjectId>
-      <StateNumber>909</StateNumber>
+    <key id="59" parent="33" name="shop_pkey">
+      <ObjectId>17051</ObjectId>
+      <StateNumber>1064</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>shop_pkey</UnderlyingIndexName>
     </key>
-    <column id="63" parent="35" name="shop_id">
+    <column id="60" parent="34" name="shop_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>910</StateNumber>
+      <StateNumber>1259</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="64" parent="35" name="check_list_id">
+    <column id="61" parent="34" name="check_list_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>910</StateNumber>
+      <StateNumber>1259</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="65" parent="35" name="uk_t0pbtys6hemk77jnrkkm8xr6i">
-      <ObjectId>16882</ObjectId>
-      <StateNumber>915</StateNumber>
+    <index id="62" parent="34" name="uk_t0pbtys6hemk77jnrkkm8xr6i">
+      <ObjectId>17240</ObjectId>
+      <StateNumber>1261</StateNumber>
       <ColNames>check_list_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="66" parent="35" name="uk_t0pbtys6hemk77jnrkkm8xr6i">
-      <ObjectId>16883</ObjectId>
-      <StateNumber>915</StateNumber>
+    <key id="63" parent="34" name="uk_t0pbtys6hemk77jnrkkm8xr6i">
+      <ObjectId>17241</ObjectId>
+      <StateNumber>1261</StateNumber>
       <ColNames>check_list_id</ColNames>
       <UnderlyingIndexName>uk_t0pbtys6hemk77jnrkkm8xr6i</UnderlyingIndexName>
     </key>
-    <foreign-key id="67" parent="35" name="fkor8r110xkooge3dmsecj67jk7">
-      <ObjectId>16908</ObjectId>
-      <StateNumber>923</StateNumber>
+    <foreign-key id="64" parent="34" name="fkor8r110xkooge3dmsecj67jk7">
+      <ObjectId>17252</ObjectId>
+      <StateNumber>1264</StateNumber>
       <ColNames>shop_id</ColNames>
-      <RefTableId>16869</RefTableId>
+      <RefTableId>17047</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>shop</RefTableName>
       <RefKeyName>shop_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="68" parent="35" name="fk3a0jviwwbbjs899k125m1y1r1">
-      <ObjectId>16903</ObjectId>
-      <StateNumber>922</StateNumber>
+    <foreign-key id="65" parent="34" name="fk3a0jviwwbbjs899k125m1y1r1">
+      <ObjectId>17247</ObjectId>
+      <StateNumber>1263</StateNumber>
       <ColNames>check_list_id</ColNames>
-      <RefTableId>16861</RefTableId>
+      <RefTableId>17232</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>receipt</RefTableName>
       <RefKeyName>receipt_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="69" parent="36" name="shop_id">
+    <column id="66" parent="35" name="shop_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>911</StateNumber>
+      <StateNumber>1066</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="70" parent="36" name="good_list_id">
+    <column id="67" parent="35" name="good_list_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>911</StateNumber>
+      <StateNumber>1066</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="71" parent="36" name="uk_1uggn890lda8wqwnltn6qfnsn">
-      <ObjectId>16884</ObjectId>
-      <StateNumber>917</StateNumber>
+    <index id="68" parent="35" name="uk_1uggn890lda8wqwnltn6qfnsn">
+      <ObjectId>17062</ObjectId>
+      <StateNumber>1072</StateNumber>
       <ColNames>good_list_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="72" parent="36" name="uk_1uggn890lda8wqwnltn6qfnsn">
-      <ObjectId>16885</ObjectId>
-      <StateNumber>917</StateNumber>
+    <key id="69" parent="35" name="uk_1uggn890lda8wqwnltn6qfnsn">
+      <ObjectId>17063</ObjectId>
+      <StateNumber>1072</StateNumber>
       <ColNames>good_list_id</ColNames>
       <UnderlyingIndexName>uk_1uggn890lda8wqwnltn6qfnsn</UnderlyingIndexName>
     </key>
-    <foreign-key id="73" parent="36" name="fk59erskevpomhe8bcwo4iybw3r">
-      <ObjectId>16918</ObjectId>
-      <StateNumber>925</StateNumber>
+    <foreign-key id="70" parent="35" name="fk59erskevpomhe8bcwo4iybw3r">
+      <ObjectId>17096</ObjectId>
+      <StateNumber>1080</StateNumber>
       <ColNames>shop_id</ColNames>
-      <RefTableId>16869</RefTableId>
+      <RefTableId>17047</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>shop</RefTableName>
       <RefKeyName>shop_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="74" parent="36" name="fk76959iyds8t8fbnri5wpg7cjp">
-      <ObjectId>16913</ObjectId>
-      <StateNumber>924</StateNumber>
+    <foreign-key id="71" parent="35" name="fk76959iyds8t8fbnri5wpg7cjp">
+      <ObjectId>17091</ObjectId>
+      <StateNumber>1079</StateNumber>
       <ColNames>good_list_id</ColNames>
-      <RefTableId>16856</RefTableId>
+      <RefTableId>17034</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>good</RefTableName>
       <RefKeyName>good_pkey</RefKeyName>
